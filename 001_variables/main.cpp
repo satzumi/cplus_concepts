@@ -19,7 +19,6 @@ int main(int,char**) {
 
 	//3. initialization of STL container
 	std::vector<int>  v1{ 10,34 };
-		
-	
+
 	return 0;
 }

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-int main() {
+int type_inference() {
 	
 	{
 		auto a = 10;	// a is an integer

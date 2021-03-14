@@ -10,15 +10,19 @@ public:
 };
 
 
+void showcompiler();
 
 int main(int,char**) {
   
+	/*
 	// uniform initialization
 	//1. dynamically allocated memory
 	int* ptr = new int[3]{ 3,4,5 };
 
 	//3. initialization of STL container
 	std::vector<int>  v1{ 10,34 };
+	*/
+
 
 	return 0;
 }

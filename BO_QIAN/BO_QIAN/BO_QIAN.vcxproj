@@ -145,6 +145,7 @@
     <ClCompile Include="weak_pointer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="casting.h" />
     <ClInclude Include="shared_pointer.h" />
     <ClInclude Include="unique_pointer.h" />
     <ClInclude Include="weak_pointer.h" />

@@ -1,10 +1,8 @@
-#include "weak_pointer.h"
+#include "casting.h"
 
 
 int main(int,char**) 
 {
-	WeakPtr::test_basic();
-	WeakPtr::test_deletion();
-
+	Casting::test_dynamic_cast();
 	return 0;
 }

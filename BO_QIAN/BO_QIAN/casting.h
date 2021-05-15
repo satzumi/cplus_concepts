@@ -44,4 +44,14 @@ namespace Casting {
 		}
 	}
 
+	// 3. const cast 
+											// works only for pointer/reference
+	const char* str = "hello world.";		// works on same type.
+	char* modifiable = const_cast<char*>(str); // cast away constness of object being pointed to.
+
+
+	// 4. reinterpret_cast
+	int p = 0x1456787;
+	Dog* dd = reinterpret_cast<Dog*>(p);	// cast a type to any other type
+
 }

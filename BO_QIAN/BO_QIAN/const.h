@@ -1,8 +1,29 @@
 #pragma once
-
+#include <iostream>
 // const 
 // A compile time contstraing that object can not be modified.
 namespace Const {
+
+	using namespace std;
+	class Dog {
+		int age;
+		string name;
+	public:
+		Dog() { age = 3; name = "micky"; }
+		void setAge(const int& a) {
+			age = a;
+			cout << "const" << endl;
+		}
+		void setAge(int& a) {
+			cout << "non const" << endl;
+			age = a;
+		}
+		const string getName() {
+			return name;
+		}
+
+	};
+
 
 	// why use const
 	//	a. Guard against inadvertent modifying the variable.
@@ -21,4 +42,15 @@ namespace Const {
 		int* const ptr2 = &j; // pointer is constant , data is not.
 
 	}
+
+	void test_const_override() {
+		int a = 4;
+		const int b = 6;
+		Dog d1;
+		d1.setAge(a);
+		d1.setAge(b);
+	}
+
+	
+
 }

@@ -10,11 +10,12 @@ namespace Const {
 		string name;
 	public:
 		Dog() { age = 3; name = "micky"; }
-		void setAge(const int& a) {
+
+		void setAge(const int& a) {	    // called when passing var const
 			age = a;
 			cout << "const" << endl;
 		}
-		void setAge(int& a) {
+		void setAge(int& a) {			// called when passing var is non const
 			cout << "non const" << endl;
 			age = a;
 		}
